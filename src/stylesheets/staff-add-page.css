@@ -22,18 +22,17 @@ button {
     background: white;
     opacity: 0.8;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
 #staffList {
     display: block;
-    margin-top: 20px;
     background: white;
     opacity: 0.8;
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
