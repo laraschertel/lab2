@@ -1,0 +1,40 @@
+body{
+    background-image: url("../images/biblio2.png");
+    background-size: cover;
+    font-family: "Arial Black";
+}
+
+.btnContainer{
+    display: flex;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.choiceBtn{
+    width: 260px;
+    height: 240px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20%;
+    font-size: 30px;
+}
+
+#staffBtn{
+    background: url("../images/globe.png");
+    background-size: cover;
+}
+
+#studentBtn{
+    background: url("../images/student.png");
+    background-size: cover;
+}
+
+#staffBtn:hover{
+    opacity: 0.2;
+}
+#studentBtn:hover{
+
+    opacity: 0.2;
+}
+

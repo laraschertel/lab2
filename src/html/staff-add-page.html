@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff Page</title>
+    <link rel="stylesheet" href="../stylesheets/staff-add-page.css">
+</head>
+<body onload="hideForm()" >
+<div class="buttonStaff">
+    <button onclick="showForm()">Add Staff</button>
+    <button>Update Staff </button>
+    <button>Delete Staff </button>
+</div>
+<div>
+    <form class="staffForm" id="staffForm">
+        <label>Student ID</label>
+        <input type="text" id="staffID" required>
+        <label>First Name</label>
+        <input type="text" id="firstName" required>
+        <label>Last Name</label>
+        <input type="text" id="lastName">
+        <label>DOB</label>
+        <input type="date" id="dob">
+        <label>Gender</label>
+        <div class="radioButton">
+            <input type="radio" name="gender" value="Fem">Fem
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Other">Other
+
+        </div>
+        <label>Email</label>
+        <input type="text" id="email" required>
+        <button onclick="hideForm()">add</button>
+        <button onclick="hideForm()">cancel</button>
+    </form>
+</div>
+<div id="staffList"></div>
+<script defer src="../javascript/staff-add-page.js"></script>
+</body>
+</html>

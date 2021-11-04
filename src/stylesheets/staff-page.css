@@ -1,0 +1,46 @@
+body{
+    background-image: url("../images/coffee.png");
+    background-size: cover;
+    text-align: center;
+    font-family: "Arial Black";
+}
+
+.courseSelection{
+    position: absolute;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: 40px;
+    color: black;
+}
+
+#courseOptions {
+    text-align: center;
+    opacity: 0.4;
+}
+select{
+    font-size: 24px;
+}
+
+#studentList {
+    background: #D7D9DA;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 40px;
+}
+
+th, td {
+    position: center;
+    background: #D7D9DA;
+    border: 1px solid black;
+    padding: 5px;
+}

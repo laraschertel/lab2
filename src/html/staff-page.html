@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff Page</title>
+    <link rel="stylesheet" href="../stylesheets/staff-page.css">
+</head>
+<body>
+<div class="courseSelection">
+    <label>Course Selection</label>
+    <select name="courseOptions" id="courseOptions" required onchange="showSelectedList()">
+        <option value="Selectcourse">Select course</option>
+        <option value="Informatik">Informatik</option>
+        <option value="Design">Design</option>
+        <option value="Medicine">Medicine</option>
+        <option value="Law">Law</option>
+    </select>
+</div>
+<div id="studentList"></div>
+<script defer src="../javascript/staff-page.js"></script>
+</body>
+</html>

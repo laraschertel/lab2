@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../stylesheets/login-page.css">
+</head>
+
+<body>
+<div class="loginContainer">
+    <div class="login">
+        <form onsubmit="return validateFormAdmin()">
+            <h1>Admin Login</h1>
+            <input id="adminname" name="adminname" required type="text" placeholder="Username">
+            <input id="adminpassword" name="adminpassword" required type="password" placeholder="Password"><br>
+            <button id="adminSubmitBtn" type="submit" value="adminSubmitBtn">Login</button>
+        </form>
+    </div>
+    <div class="login">
+        <form onsubmit="return validateFormStaff()">
+            <h1>Staff Login</h1>
+            <input id="staffname" name="staffname" required type="text" placeholder="Username">
+            <input id="staffpassword" name="staffpassword" required type="password" placeholder="Password"><br>
+            <button id="staffSubmitBtn" type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<script defer src="../javascript/login-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    background-image: url("../images/biblio2.png");
+    background-size: cover;
+    font-family: "Arial Black";
+}
+
+.loginContainer{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.login{
+    background: white;
+    opacity: 0.8;
+    position: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px 50px;
+    padding: 10px;
+    justify-content: center;
+
+}
