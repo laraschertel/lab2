@@ -6,15 +6,26 @@
     <link rel="stylesheet" href="../stylesheets/staff-page.css">
 </head>
 <body>
-<div class="courseSelection">
-    <label>Course Selection</label>
-    <select name="courseOptions" id="courseOptions" required onchange="showSelectedList()">
-        <option value="Selectcourse">Select course</option>
-        <option value="Informatik">Informatik</option>
-        <option value="Design">Design</option>
-        <option value="Medicine">Medicine</option>
-        <option value="Law">Law</option>
+<div class="selections">
+    <div class="courseSelection">
+        <label>Course Selection</label>
+        <select name="courseOptions" id="courseOptions" required onchange="showSelectedListDep()">
+            <option value="Selectcourse">Select course</option>
+            <option value="F1">F1</option>
+            <option value="F2">F2</option>
+            <option value="F3">F3</option>
+            <option value="F4">F4</option>
+        </select>
+    </div>
+
+    <div class="semesterSelection">
+    <label>Semester Selection</label>
+    <select name="semesterOptions" id="semesterOptions" required onchange="showSelectedListSem()">
+        <option value="Selectsemester">Select semester</option>
+        <option value="Winter">Winter</option>
+        <option value="Sommer">Sommer</option>
     </select>
+    </div>
 </div>
 <div id="studentList"></div>
 <script defer src="../javascript/staff-page.js"></script>

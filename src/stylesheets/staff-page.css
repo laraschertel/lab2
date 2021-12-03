@@ -5,16 +5,19 @@ body{
     font-family: "Arial Black";
 }
 
-.courseSelection{
-    position: absolute;
-    top: 20%;
-    transform: translate(-50%, -50%);
-    display: inline-flex;
+.selections{
+    position:relative;
+    top: 10%;
+    display: inline;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    font-size: 40px;
-    color: black;
+    font-size: 20px;
+    color: black;}
+
+#semesterOptions{
+    text-align: center;
+    opacity: 0.4;
 }
 
 #courseOptions {
@@ -27,15 +30,14 @@ select{
 
 #studentList {
     background: #D7D9DA;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    position: center;
+    display: block;
+    background: white;
+    opacity: 0.8;
+    margin-top: 10%;
     display: inline-flex;
     flex-direction: column;
     align-content: center;
-    margin-top: 40px;
 }
 
 th, td {

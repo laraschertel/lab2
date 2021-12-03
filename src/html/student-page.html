@@ -11,33 +11,54 @@
     <button>Update Student </button>
     <button>Delete Student </button>
 </div>
+<div class="selections">
+    <div class="courseSelection">
+        <label>Course Selection</label>
+        <select name="courseOptions" id="courseOptions" required onchange="showSelectedListDep()">
+            <option value="Selectcourse">Select course</option>
+            <option value="F1">F1</option>
+            <option value="F2">F2</option>
+            <option value="F3">F3</option>
+            <option value="F4">F4</option>
+        </select>
+    </div>
+
+    <div class="csemesterSelection">
+        <label>Semester Selection</label>
+        <select name="semesterOptions" id="semesterOptions" required onchange="showSelectedListSem()">
+            <option value="Selectsemester">Select semester</option>
+            <option value="Winter">Winter</option>
+            <option value="Sommer">Sommer</option>
+        </select>
+    </div>
+</div>
 <div>
     <form class="studentForm" id="studentForm">
-    <label>Student ID</label>
-    <input type="text" id="studentID" required>
-    <label>First Name</label>
-    <input type="text" id="firstName" required>
-    <label>Last Name</label>
-    <input type="text" id="lLastName">
-    <label>DOB</label>
-    <input type="date" id="dob">
-    <label>Gender</label>
-    <div class="radioButton">
-        <input type="radio" name="gender" value="Fem">Fem
-        <input type="radio" name="gender" value="Male">Male
-        <input type="radio" name="gender" value="Other">Other
+        <label>Student "ID"</label>
+        <input type="text" id="studentID" required>
+        <label>First Name</label>
+        <input type="text" id="firstName" required>
+        <label>Last Name</label>
+        <input type="text" id="lLastName">
+        <label>DOB</label>
+        <input type="date" id="dob">
+        <label>Gender</label>
+        <div class="radioButton">
+            <input type="radio" name="gender" value="Fem">Fem
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Other">Other
 
-    </div>
-    <label>Department</label>
-    <select name="department" id="department" required>
-        <option value="F1"> Fachbereich 1</option>
-        <option value="F2"> Fachbereich 2</option>
-        <option value="F3"> Fachbereich 3</option>
-        <option value="F4"> Fachbereich 4</option>
-    </select>
-    <label>Email</label>
-    <input type="text" id="email" required>
-    <button onclick="hideForm()">add</button>
+        </div>
+        <label>Department</label>
+        <select name="department" id="department" required>
+            <option value="F1"> Fachbereich 1</option>
+            <option value="F2"> Fachbereich 2</option>
+            <option value="F3"> Fachbereich 3</option>
+            <option value="F4"> Fachbereich 4</option>
+        </select>
+        <label>Email</label>
+        <input type="text" id="email" required>
+        <button onclick="checkDate()">add</button>
         <button onclick="hideForm()">cancel</button>
     </form>
 </div>
