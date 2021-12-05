@@ -1,7 +1,8 @@
 let studentList = document.querySelector('#studentList')
 
+var students
 
-fetch('./studentList.json')
+fetch('https://api.jsonbin.io/b/61acdfce0ddbee6f8b17c64e')
     .then(response => response.json())
     .then(data => students = data)
     .then(json => console.log(json))

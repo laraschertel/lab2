@@ -6,7 +6,7 @@ function validateFormAdmin() {
     var username = document.getElementById("adminname").value;
     var password = document.getElementById("adminpassword").value;
 
-    if (username=="1" && password=="1") {
+    if (username=="admin" && password=="admin") {
         alert("Login successfully");
         window.location.href = "admin-page.html";
         return false;
@@ -28,7 +28,7 @@ function validateFormStaff() {
     var username = document.getElementById("staffname").value;
     var password = document.getElementById("staffpassword").value;
 
-    if (username=="2" && password=="2") {
+    if (username=="staff" && password=="staff") {
         alert("Login successfully");
         window.location.href = "staff-page.html";
         return false;

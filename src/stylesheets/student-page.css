@@ -60,7 +60,6 @@ select{
 
 #studentList {
     position: relative;
-    display: block;
     background: white;
     opacity: 0.8;
     margin-top: 10%;

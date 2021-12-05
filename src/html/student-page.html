@@ -13,7 +13,7 @@
 </div>
 <div class="selections">
     <div class="courseSelection">
-        <label>Course Selection</label>
+        <label>Department Selection</label>
         <select name="courseOptions" id="courseOptions" required onchange="showSelectedListDep()">
             <option value="Selectcourse">Select course</option>
             <option value="F1">F1</option>
@@ -23,7 +23,7 @@
         </select>
     </div>
 
-    <div class="csemesterSelection">
+    <div class="semesterSelection">
         <label>Semester Selection</label>
         <select name="semesterOptions" id="semesterOptions" required onchange="showSelectedListSem()">
             <option value="Selectsemester">Select semester</option>
@@ -41,7 +41,7 @@
         <label>Last Name</label>
         <input type="text" id="lLastName">
         <label>DOB</label>
-        <input type="date" id="dob">
+        <input type="date" value= "dob" id="dob" onclick="disableDate()">
         <label>Gender</label>
         <div class="radioButton">
             <input type="radio" name="gender" value="Fem">Fem
@@ -58,6 +58,8 @@
         </select>
         <label>Email</label>
         <input type="text" id="email" required>
+        <label>Joining-date</label>
+        <input type="date" id="joiningDate" min="2015-01-01" max="2015-12-31">
         <button onclick="checkDate()">add</button>
         <button onclick="hideForm()">cancel</button>
     </form>
